@@ -2,12 +2,12 @@ name: release-onlyoffice
 
 on:
   push:
-    tags:
-      - builds-debian-11/*
+    branches:
+      - main
 
 env:
-  DEBIAN_PACKAGE_SUFFIX: -btactic
-  TAG_SUFFIX: -btactic
+  DEBIAN_PACKAGE_SUFFIX: -devopsxsend
+  TAG_SUFFIX: -devopsxsend
   DISTRO_FULLNAME: Debian 11
   DISTRO_TAG_PREFIX: debian-11
 
